@@ -7,6 +7,16 @@ function ui(e) {
   const userInput = document.getElementById("roboSpeak").value;
   const userNumbers = numberGenerator(userInput);
   const robogerReaction = beepBoopGenerator(userNumbers);
+  const ul = document.getElementById("mrRoboger");
+  let li = document.createElement("li");
+  li.setAttribute("class", "removeMe");
+  const removeThese = document.getElementsByClassName("removeMe");
+  removeThese.remove();
+  robogerReaction.forEach((number) => {
+    li.innerText = number;
+  })
+
+
 }
 
 function numberGenerator(userInput) {
@@ -32,5 +42,5 @@ function beepBoopGenerator(userNumbers) {
       newArray.push(currentCheck);
     }
   }
-  console.log(newArray);
+  return newArray;
 }
