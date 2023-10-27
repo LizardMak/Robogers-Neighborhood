@@ -22,8 +22,12 @@ function beepBoopGenerator(userNumbers) {
   let newArray = [];
   for (let i = 0; i < userNumbers.length; i++) {
     let currentCheck = userNumbers[i].toString();
-    if (currentCheck.includes("1")) {
-      newArray.push("Beep!");
+    if (currentCheck.includes("3")) {
+      newArray.push("Won't you be my neighbor?");
+    } else if (currentCheck.includes("2")) {
+      newArray.push("Boop!")
+    } else if (currentCheck.includes("1")) {
+      newArray.push("Beep!")
     } else {
       newArray.push(currentCheck);
     }
