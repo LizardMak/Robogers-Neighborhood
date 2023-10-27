@@ -38,6 +38,12 @@ function beepBoopGenerator(userNumbers) {
       newArray.push("Boop!")
     } else if (currentCheck.includes("1")) {
       newArray.push("Beep!")
+    } else if (currentCheck.includes("7")) {
+      newArray.push("Domo")
+    } else if (currentCheck.includes("8")) {
+      newArray.push("Arigato")
+    } else if (currentCheck.includes("9")) {
+      newArray.push("Mr. Roboger")
     } else {
       newArray.push(currentCheck);
     }

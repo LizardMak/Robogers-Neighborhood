@@ -32,6 +32,10 @@ Test: "It should return array replacing numbers containing 1,2,3 with Beep!, Boo
 Code: const userInput = 23
 Expected Output: [0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, Won't you be my neighbor?]
 
+Test: "It should return array replacing numbers containing 7,8,9 with Domo, Arigato, Mr. Roboger, respectively, being placed after 3>2>1 in the hierarchy in an order of 7>8>9"
+Code: const userInput = 9
+Expected Output: [0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, Domo, Arigato, Mr. Roboger]
+
 Describe(clearPage)
 Test: "It should clear the page of previous results"
 Code: const userInput = 3 / const userInput = 3
