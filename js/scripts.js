@@ -11,6 +11,7 @@ function ui(e) {
   const ul = document.getElementById("mrRoboger");
   robogerReaction.forEach((number) => {
     let li = document.createElement("li");
+    li.setAttribute("class", "green")
     li.innerText = number;
     ul.append(li);
   })
