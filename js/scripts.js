@@ -5,6 +5,14 @@ window.addEventListener("load", function() {
 function ui(e) {
   e.preventDefault();
   const userInput = document.getElementById("roboSpeak").value;
-  console.log(userInput);
+  const userNumbers = numberGenerator(userInput);
 }
 
+function numberGenerator(userInput) {
+  let numArray = [];
+  for (let index = 0; index <= userInput; index++) {
+    let pushNumber = index
+    numArray.push(pushNumber);
+  }
+  console.log(numArray);
+}
