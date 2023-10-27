@@ -4,6 +4,7 @@ window.addEventListener("load", function() {
 
 function ui(e) {
   e.preventDefault();
-  console.log("default prevented!")
+  const userInput = document.getElementById("roboSpeak").value;
+  console.log(userInput);
 }
 
