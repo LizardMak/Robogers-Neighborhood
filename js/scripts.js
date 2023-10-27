@@ -8,12 +8,10 @@ function ui(e) {
   const userNumbers = numberGenerator(userInput);
   const robogerReaction = beepBoopGenerator(userNumbers);
   const ul = document.getElementById("mrRoboger");
-  let li = document.createElement("li");
-  li.setAttribute("class", "removeMe");
-  const removeThese = document.getElementsByClassName("removeMe");
-  removeThese.remove();
   robogerReaction.forEach((number) => {
+    let li = document.createElement("li");
     li.innerText = number;
+    ul.append(li);
   })
 
 

@@ -8,6 +8,10 @@ Test: "It should return userInput"
 Code: const userInput = 3
 Expected Output: 3
 
+Test: "It should print results to page"
+Code: const userInput = 3
+Expected Output: 0, Beep!, Boop!, Won't you be my neighbor?
+
 Describe(numberGenerator)
 
 Test: "It should return array counting up to userInput"
