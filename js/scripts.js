@@ -4,6 +4,7 @@ window.addEventListener("load", function() {
 
 function ui(e) {
   e.preventDefault();
+  clearPage();
   const userInput = document.getElementById("roboSpeak").value;
   const userNumbers = numberGenerator(userInput);
   const robogerReaction = beepBoopGenerator(userNumbers);
@@ -41,4 +42,11 @@ function beepBoopGenerator(userNumbers) {
     }
   }
   return newArray;
+}
+
+function clearPage() {
+  const removeThis = document.getElementById("mrRoboger");
+  while (removeThis.firstChild) {
+    removeThis.removeChild(removeThis.firstChild)
+  }
 }
