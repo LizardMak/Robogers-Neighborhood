@@ -32,13 +32,6 @@ function beepBoopGenerator(userNumbers) {
   return newArray;
 }
 
-function clearPage() {
-  const removeThis = document.getElementById("mrRoboger");
-  while (removeThis.firstChild) {
-    removeThis.removeChild(removeThis.firstChild)
-  }
-}
-
 //UI logic
 
 window.addEventListener("load", function () {
@@ -59,4 +52,11 @@ function ui(e) {
   })
 
 
+}
+
+function clearPage() {
+  const removeThis = document.getElementById("mrRoboger");
+  while (removeThis.firstChild) {
+    removeThis.removeChild(removeThis.firstChild)
+  }
 }
