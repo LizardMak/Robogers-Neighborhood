@@ -49,4 +49,4 @@ function clearPage() {
   while (removeThis.firstChild) {
     removeThis.removeChild(removeThis.firstChild)
   }
-} /
+} 
