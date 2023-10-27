@@ -6,6 +6,7 @@ function ui(e) {
   e.preventDefault();
   const userInput = document.getElementById("roboSpeak").value;
   const userNumbers = numberGenerator(userInput);
+  const robogerReaction = beepBoopGenerator(userNumbers);
 }
 
 function numberGenerator(userInput) {
@@ -14,5 +15,18 @@ function numberGenerator(userInput) {
     let pushNumber = index
     numArray.push(pushNumber);
   }
-  console.log(numArray);
+  return numArray;
+}
+
+function beepBoopGenerator(userNumbers) {
+  let newArray = [];
+  for (let i = 0; i < userNumbers.length; i++) {
+    let currentCheck = userNumbers[i].toString();
+    if (currentCheck.includes("1")) {
+      newArray.push("Beep!");
+    } else {
+      newArray.push(currentCheck);
+    }
+  }
+  console.log(newArray);
 }
