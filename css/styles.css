@@ -7,12 +7,13 @@
 .body {
   background-color: black;
 }
+
 .white {
-  color:white;
+  color: white;
   font-family: "Silkscreen";
 }
 
 .green {
-  color:rgb(0, 183, 0);
+  color: rgb(0, 183, 0);
   font-family: "Silkscreen";
 }

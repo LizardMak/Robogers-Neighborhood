@@ -1,23 +1,4 @@
-window.addEventListener("load", function() {
-  document.getElementById("form").addEventListener("submit", ui);
-})
-
-function ui(e) {
-  e.preventDefault();
-  clearPage();
-  const userInput = document.getElementById("roboSpeak").value;
-  const userNumbers = numberGenerator(userInput);
-  const robogerReaction = beepBoopGenerator(userNumbers);
-  const ul = document.getElementById("mrRoboger");
-  robogerReaction.forEach((number) => {
-    let li = document.createElement("li");
-    li.setAttribute("class", "green")
-    li.innerText = number;
-    ul.append(li);
-  })
-
-
-}
+//Business logic
 
 function numberGenerator(userInput) {
   let numArray = [];
@@ -56,4 +37,26 @@ function clearPage() {
   while (removeThis.firstChild) {
     removeThis.removeChild(removeThis.firstChild)
   }
-} 
+}
+
+//UI logic
+
+window.addEventListener("load", function () {
+  document.getElementById("form").addEventListener("submit", ui);
+})
+
+function ui(e) {
+  e.preventDefault();
+  clearPage();
+  const userInput = document.getElementById("roboSpeak").value;
+  const userNumbers = numberGenerator(userInput);
+  const robogerReaction = beepBoopGenerator(userNumbers);
+  const ul = document.getElementById("mrRoboger");
+  robogerReaction.forEach((number) => {
+    let li = document.createElement("li");
+    li.innerText = number;
+    ul.append(li);
+  })
+
+
+}
